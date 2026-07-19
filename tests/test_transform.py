@@ -14,8 +14,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 from transform import clean_trips, aggregate_hourly_zone_fares  # noqa: E402
 
 
-
-
 @pytest.fixture(scope="module")
 def spark():
     session = SparkSession.builder.appName("test").master("local[2]").getOrCreate()
