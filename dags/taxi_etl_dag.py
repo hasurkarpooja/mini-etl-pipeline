@@ -14,9 +14,10 @@ import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from extract import download_month
-from transform import run as run_transform
-from load import load_hourly_zone_fares
+from extract import download_month  # noqa: E402
+from transform import run as run_transform  # noqa: E402
+from load import load_hourly_zone_fares  # noqa: E402
+
 
 default_args = {
     "owner": "data-eng",

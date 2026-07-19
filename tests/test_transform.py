@@ -11,8 +11,7 @@ from pyspark.sql import SparkSession
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 
-from transform import clean_trips, aggregate_hourly_zone_fares
-
+from transform import clean_trips, aggregate_hourly_zone_fares  # noqa: E402
 
 @pytest.fixture(scope="module")
 def spark():
