@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: taxi_warehouse_pg
+    environment:
+      POSTGRES_DB: taxi_warehouse
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - taxi_pg_data:/var/lib/postgresql/data
+
+volumes:
+  taxi_pg_data:

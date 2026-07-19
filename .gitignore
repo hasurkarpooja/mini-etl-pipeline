@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/raw/
+data/curated/
+*.parquet
+.env
+airflow.db
+airflow.cfg
+logs/
+.DS_Store
+.idea/
+.vscode/
